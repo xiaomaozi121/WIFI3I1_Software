@@ -1,0 +1,515 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.5.7591/W32 for ARM                 19/Dec/2014  10:48:05
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Exe\TIM_TimeBase.out
+#    Map file     =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\List\TIM_TimeBase.map
+#    Command line =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\json_data_sendmakd.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\main.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\startup_stm32f030x8.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_gpio.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_it.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_iwdg.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_misc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_rcc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_rtc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_spi.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_tim.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_usart.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\system_stm32f0xx.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\userBSP.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_ascii.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_check_ipset.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_check_link.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_check_tcplk.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_config_init.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_connect_ap.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_creat_apadhoc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_easyconfig.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_en_dis_tcp.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_query_con_status.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_query_dns.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_query_fwversion.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_query_ipconfig.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_query_rssi.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_reld_mudol.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_scan_ap.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_send_data.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_set_channel.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_set_ipdhcp.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_set_ipstatic.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_set_psk.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_set_pwrmode.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_set_sipinfo.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_set_webconfig.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_start_autoconnect.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_start_webconfig.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_storeconfig.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_tcp_send_recv.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_WIFI_Driver.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\wifi_wps.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Exe\TIM_TimeBase.out
+#        --map
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\List\TIM_TimeBase.map
+#        --config
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\stm32f0xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+
+  Section             Kind        Address    Size  Object
+  -------             ----        -------    ----  ------
+"A1":                                        0xc0
+  .intvec             ro code  0x08000000    0xc0  startup_stm32f030x8.o [1]
+                             - 0x080000c0    0xc0
+
+"P1":                                      0x2e60
+  .text               ro code  0x080000c0   0x8ec  wifi_tcp_send_recv.o [1]
+  .text               ro code  0x080009ac   0x704  json_data_sendmakd.o [1]
+  .text               ro code  0x080010b0    0x5c  ABImemcpy.o [4]
+  .text               ro code  0x0800110c    0x1c  strcat.o [3]
+  .text               ro code  0x08001128    0x38  sprintf.o [3]
+  .text               ro code  0x08001160    0x10  strlen.o [4]
+  .text               ro code  0x08001170   0x40c  userBSP.o [1]
+  .text               ro code  0x0800157c    0x34  ABImemset.o [4]
+  .text               ro code  0x080015b0    0x10  strcpy.o [4]
+  .text               ro code  0x080015c0    0x2c  strncmp.o [3]
+  .text               ro code  0x080015ec   0x524  xprintfsmall.o [3]
+  .text               ro code  0x08001b10   0x120  stm32f0xx_rcc.o [1]
+  .text               ro code  0x08001c30    0x9a  stm32f0xx_gpio.o [1]
+  .text               ro code  0x08001cca    0x2a  zero_init3.o [4]
+  .text               ro code  0x08001cf4    0x70  stm32f0xx_misc.o [1]
+  .text               ro code  0x08001d64    0xae  I32DivModFast.o [4]
+  .text               ro code  0x08001e12     0xa  xsprout.o [3]
+  .text               ro code  0x08001e1c    0xce  stm32f0xx_tim.o [1]
+  .text               ro code  0x08001eea     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08001eec   0x152  stm32f0xx_usart.o [1]
+  .text               ro code  0x0800203e    0x14  strchr.o [4]
+  .text               ro code  0x08002052    0x18  memchr.o [4]
+  .text               ro code  0x0800206a     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x0800206c     0x2  IntDivZer.o [4]
+  .text               ro code  0x0800206e     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002070   0x264  wifi_WIFI_Driver.o [1]
+  .text               ro code  0x080022d4    0xd0  wifi_config_init.o [1]
+  .text               ro code  0x080023a4   0x10c  wifi_check_link.o [1]
+  .text               ro code  0x080024b0   0x11c  wifi_check_ipset.o [1]
+  .text               ro code  0x080025cc    0xf8  wifi_set_sipinfo.o [1]
+  .text               ro code  0x080026c4    0xf8  wifi_check_tcplk.o [1]
+  .text               ro code  0x080027bc   0x130  wifi_en_dis_tcp.o [1]
+  .text               ro code  0x080028ec     0xc  atoi.o [3]
+  .text               ro code  0x080028f8   0x180  xstoul.o [3]
+  .text               ro code  0x08002a78    0x10  errno.o [3]
+  .text               ro code  0x08002a88     0x2  xtls.o [3]
+  .text               ro code  0x08002a8a     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002a8c   0x118  stm32f0xx_it.o [1]
+  .text               ro code  0x08002ba4    0xf0  main.o [1]
+  .text               ro code  0x08002c94    0xb4  system_stm32f0xx.o [1]
+  .text               ro code  0x08002d48    0x30  copy_init3.o [4]
+  .text               ro code  0x08002d78    0x28  data_init.o [4]
+  .iar.init_table     const    0x08002da0    0x24  - Linker created -
+  .text               ro code  0x08002dc4    0x1a  cmain.o [4]
+  .text               ro code  0x08002dde     0x4  low_level_init.o [3]
+  .text               ro code  0x08002de2     0x8  exit.o [3]
+  .text               ro code  0x08002dea     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002dec     0xa  cexit.o [4]
+  .text               ro code  0x08002df6     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002df8    0x14  exit.o [5]
+  .text               ro code  0x08002e0c    0x10  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e1c     0xc  cstartup_M.o [4]
+  .rodata             const    0x08002e28     0x8  wifi_tcp_send_recv.o [1]
+  .text               ro code  0x08002e30     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e32     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e34     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e36     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e38     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e3a     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e3c     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e3e     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e40     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e42     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e44     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e46     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e48     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e4a     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e4c     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e4e     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e50     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e52     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e54     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e56     0x2  startup_stm32f030x8.o [1]
+  .text               ro code  0x08002e58     0x2  startup_stm32f030x8.o [1]
+  .rodata             const    0x08002e5a     0x0  zero_init3.o [4]
+  .rodata             const    0x08002e5a     0x0  copy_init3.o [4]
+  Initializer bytes   ro data  0x08002e5c    0xc4  <for P2 s0>
+                             - 0x08002f20  0x2e60
+
+"P2":                                       0xcc8
+  P2 s0                        0x20000000    0xc4  <Init block>
+    .data             inited   0x20000000    0x60  main.o [1]
+    .data             inited   0x20000060    0x18  main.o [1]
+    .data             inited   0x20000078    0x14  system_stm32f0xx.o [1]
+    .data             inited   0x2000008c    0x10  main.o [1]
+    .data             inited   0x2000009c    0x10  stm32f0xx_rcc.o [1]
+    .data             inited   0x200000ac     0x8  userBSP.o [1]
+    .data             inited   0x200000b4     0x4  userBSP.o [1]
+    __DLIB_PERTHREAD  inited   0x200000b8     0x4  errno.o [3]
+    .data             inited   0x200000bc     0x2  main.o [1]
+    .data             inited   0x200000be     0x2  userBSP.o [1]
+    .data             inited   0x200000c0     0x1  main.o [1]
+  .bss                zero     0x200000c4   0x5d8  main.o [1]
+  .bss                zero     0x2000069c   0x114  wifi_WIFI_Driver.o [1]
+  .bss                zero     0x200007b0    0x50  main.o [1]
+  .bss                zero     0x20000800    0x44  main.o [1]
+  .bss                zero     0x20000844    0x44  main.o [1]
+  .bss                zero     0x20000888    0x10  main.o [1]
+  .bss                zero     0x20000898    0x10  main.o [1]
+  .bss                zero     0x200008a8     0x6  userBSP.o [1]
+  .bss                zero     0x200008ae     0x4  userBSP.o [1]
+  .bss                zero     0x200008b2     0x2  main.o [1]
+  .bss                zero     0x200008b4     0x2  main.o [1]
+  .bss                zero     0x200008b6     0x2  main.o [1]
+  .bss                zero     0x200008b8     0x2  main.o [1]
+  .bss                zero     0x200008ba     0x2  stm32f0xx_it.o [1]
+  .bss                zero     0x200008bc     0x2  userBSP.o [1]
+  .bss                zero     0x200008be     0x1  main.o [1]
+  .bss                zero     0x200008bf     0x1  main.o [1]
+  .bss                zero     0x200008c0     0x1  main.o [1]
+  .bss                zero     0x200008c1     0x1  main.o [1]
+  .bss                zero     0x200008c2     0x1  main.o [1]
+  .bss                zero     0x200008c3     0x1  main.o [1]
+  CSTACK                       0x200008c8   0x400  <Block>
+    CSTACK            uninit   0x200008c8   0x400  <Block tail>
+                             - 0x20000cc8   0xcc8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x800:
+          0x200000c4  0x800
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0xc4 (101% of destination):
+          0x08002e5c   0xc4
+    1 destination range, total size 0xc1:
+          0x20000000   0xc1
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj: [1]
+    json_data_sendmakd.o     1 796
+    main.o                     240      139    1 897
+    startup_stm32f030x8.o      262
+    stm32f0xx_gpio.o           154
+    stm32f0xx_it.o             280                 2
+    stm32f0xx_misc.o           112
+    stm32f0xx_rcc.o            288       16       16
+    stm32f0xx_tim.o            206
+    stm32f0xx_usart.o          338
+    system_stm32f0xx.o         180       20       20
+    userBSP.o                1 036       14       26
+    wifi_WIFI_Driver.o         612               276
+    wifi_check_ipset.o         284
+    wifi_check_link.o          268
+    wifi_check_tcplk.o         248
+    wifi_config_init.o         208
+    wifi_en_dis_tcp.o          304
+    wifi_set_sipinfo.o         248
+    wifi_tcp_send_recv.o     2 284        8
+    ------------------------------------------------
+    Total:                   9 348      197    2 237
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    atoi.o                      12
+    errno.o                     16        4        4
+    exit.o                       8
+    low_level_init.o             4
+    sprintf.o                   56
+    strcat.o                    28
+    strncmp.o                   44
+    xprintfsmall.o           1 316
+    xsprout.o                   10
+    xstoul.o                   384
+    xtls.o                       2
+    ------------------------------------------------
+    Total:                   1 880        4        4
+
+rt6M_tl.a: [4]
+    ABImemcpy.o                 92
+    ABImemset.o                 52
+    I32DivModFast.o            174
+    IntDivZer.o                  2
+    cexit.o                     10
+    cmain.o                     26
+    copy_init3.o                48
+    cstartup_M.o                12
+    data_init.o                 40
+    memchr.o                    24
+    strchr.o                    20
+    strcpy.o                    16
+    strlen.o                    16
+    zero_init3.o                42
+    ------------------------------------------------
+    Total:                     574
+
+shb_l.a: [5]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Linker created                       41    1 024
+----------------------------------------------------
+    Grand Total:            11 822      242    3 265
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x08002dc5         Code  Gb  cmain.o [4]
+AHBPrescTable           0x20000078   0x10  Data  Gb  system_stm32f0xx.o [1]
+APBAHBPrescTable        0x2000009c   0x10  Data  Lc  stm32f0xx_rcc.o [1]
+AfterSend_status_press  0x08000109   0x18  Code  Gb  wifi_tcp_send_recv.o [1]
+BHKS_SerialPutChar      0x08001441   0x16  Code  Gb  userBSP.o [1]
+BHKS_cmd_status_pro     0x0800219f   0xe8  Code  Gb  wifi_WIFI_Driver.o [1]
+BSP_LEDInit             0x08001171   0x36  Code  Gb  userBSP.o [1]
+BSP_LEDOff              0x080011b1   0x10  Code  Gb  userBSP.o [1]
+BSP_LEDToggle           0x080011c1   0x14  Code  Gb  userBSP.o [1]
+BSP_PBGetState          0x08001229   0x16  Code  Gb  userBSP.o [1]
+BSP_PBInit              0x080011d9   0x48  Code  Gb  userBSP.o [1]
+BUTTON_CLK              0x08001220    0x4  Data  Gb  userBSP.o [1]
+BUTTON_IRQn             0x08001224    0x2  Data  Gb  userBSP.o [1]
+BUTTON_PIN              0x08001240    0x2  Data  Gb  userBSP.o [1]
+BUTTON_PORT             0x200000b4    0x4  Data  Gb  userBSP.o [1]
+CCR3_Val                0x200000be    0x2  Data  Gb  userBSP.o [1]
+CSTACK$$Base            0x200008c8          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000cc8          --   Gb  - Linker created -
+DEV_ID                  0x20000060   0x18  Data  Gb  main.o [1]
+GPIO_CLK                0x080011a8    0x8  Data  Gb  userBSP.o [1]
+GPIO_Init               0x08001c31   0x6a  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_PIN                0x080011d4    0x4  Data  Gb  userBSP.o [1]
+GPIO_PORT               0x200000ac    0x8  Data  Gb  userBSP.o [1]
+GPIO_PinAFConfig        0x08001cab   0x20  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_ReadInputDataBit   0x08001c9b    0x8  Code  Gb  stm32f0xx_gpio.o [1]
+HCHO_param_buf          0x20000038    0x4  Data  Gb  main.o [1]
+HardFault_Handler       0x08002a8f    0x2  Code  Gb  stm32f0xx_it.o [1]
+Humi_buf                0x20000044    0x4  Data  Gb  main.o [1]
+Json_paraset_pro        0x08000c25  0x262  Code  Gb  json_data_sendmakd.o [1]
+Json_updata_pro         0x08000f01   0xba  Code  Gb  json_data_sendmakd.o [1]
+Json_upload_pro         0x080009ad  0x1ee  Code  Gb  json_data_sendmakd.o [1]
+LoadInt                 0x0800199d   0x4c  Code  Lc  xprintfsmall.o [3]
+NMI_Handler             0x08002a8d    0x2  Code  Gb  stm32f0xx_it.o [1]
+NVIC_Init               0x08001cf5   0x46  Code  Gb  stm32f0xx_misc.o [1]
+PM25_param_buf          0x2000003c    0x4  Data  Gb  main.o [1]
+PendSV_Handler          0x08002a93    0x2  Code  Gb  stm32f0xx_it.o [1]
+PrescalerValue          0x200008bc    0x2  Data  Gb  userBSP.o [1]
+RCC_AHBPeriphClockCmd   0x08001bd3   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x08001bfb   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08001be7   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetClocksFreq       0x08001b11   0xc2  Code  Gb  stm32f0xx_rcc.o [1]
+Recv_CMD_reco           0x080006ad   0x58  Code  Gb  wifi_tcp_send_recv.o [1]
+Recv_HCHO_reco          0x080007fb   0x8c  Code  Gb  wifi_tcp_send_recv.o [1]
+Recv_Jchar_numb         0x200008b4    0x2  Data  Gb  main.o [1]
+Recv_PM25_reco          0x08000887   0x8c  Code  Gb  wifi_tcp_send_recv.o [1]
+Recv_STATUS_reco        0x08000705   0x56  Code  Gb  wifi_tcp_send_recv.o [1]
+Recv_TIME_reco          0x0800075b   0x98  Code  Gb  wifi_tcp_send_recv.o [1]
+Recv_UPD_reco           0x0800091d   0x6a  Code  Gb  wifi_tcp_send_recv.o [1]
+Region$$Table$$Base     0x08002da0          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08002dc4          --   Gb  - Linker created -
+Rsp_Cont_Pointer        0x200007b0   0x50  Data  Gb  main.o [1]
+SOFT_VER                0x2000008c   0x10  Data  Gb  main.o [1]
+SVC_Handler             0x08002a91    0x2  Code  Gb  stm32f0xx_it.o [1]
+Soft_upd_datnumb        0x200008b6    0x2  Data  Gb  main.o [1]
+SysTick_CLKSourceConfig
+                        0x08001d3b   0x18  Code  Gb  stm32f0xx_misc.o [1]
+SysTick_Handler         0x08002a95    0x2  Code  Gb  stm32f0xx_it.o [1]
+SystemCoreClock         0x20000088    0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit              0x08002c95   0x98  Code  Gb  system_stm32f0xx.o [1]
+TIM3_IRQHandler         0x08002a97   0x8c  Code  Gb  stm32f0xx_it.o [1]
+TIM_ClearITPendingBit   0x08001ee5    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_Cmd                 0x08001e7b   0x14  Code  Gb  stm32f0xx_tim.o [1]
+TIM_Config              0x08001243   0x62  Code  Gb  userBSP.o [1]
+TIM_GetCapture4         0x08001eb9    0x4  Code  Gb  stm32f0xx_tim.o [1]
+TIM_GetITStatus         0x08001ecf   0x16  Code  Gb  stm32f0xx_tim.o [1]
+TIM_ITConfig            0x08001ebd   0x12  Code  Gb  stm32f0xx_tim.o [1]
+TIM_PrescalerConfig     0x08001e75    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SetCompare4         0x08001eb1    0x4  Code  Gb  stm32f0xx_tim.o [1]
+TIM_TimeBaseInit        0x08001e1d   0x58  Code  Gb  stm32f0xx_tim.o [1]
+Temp_buf                0x20000040    0x4  Data  Gb  main.o [1]
+Time_local_buf          0x20000898   0x10  Data  Gb  main.o [1]
+Time_recv_buf           0x20000888   0x10  Data  Gb  main.o [1]
+UART_data_len           0x200008ac    0x2  Data  Gb  userBSP.o [1]
+USART1_IRQHandler       0x08002b23   0x56  Code  Gb  stm32f0xx_it.o [1]
+USART_ClearITPendingBit
+                        0x08002035    0xa  Code  Gb  stm32f0xx_usart.o [1]
+USART_Cmd               0x08001f89   0x16  Code  Gb  stm32f0xx_usart.o [1]
+USART_GetFlagStatus     0x08001fef    0xe  Code  Gb  stm32f0xx_usart.o [1]
+USART_GetITStatus       0x08001ffd   0x38  Code  Gb  stm32f0xx_usart.o [1]
+USART_INIT              0x08001355   0x94  Code  Gb  userBSP.o [1]
+USART_ITConfig          0x08001fc5   0x2a  Code  Gb  stm32f0xx_usart.o [1]
+USART_Init              0x08001eed   0x9c  Code  Gb  stm32f0xx_usart.o [1]
+USART_OUT               0x080013e9   0x40  Code  Gb  userBSP.o [1]
+USART_ReceiveData       0x08001fa7    0x8  Code  Gb  stm32f0xx_usart.o [1]
+USART_SendData          0x08001f9f    0x8  Code  Gb  stm32f0xx_usart.o [1]
+WIFI_EN_ON              0x080014bb    0xa  Code  Gb  userBSP.o [1]
+WIFI_EN_init            0x08001457   0x12  Code  Gb  userBSP.o [1]
+WIFI_MODULE_INIT        0x08002071   0x4c  Code  Gb  wifi_WIFI_Driver.o [1]
+WIFI_RELD_init          0x0800146d   0x28  Code  Gb  userBSP.o [1]
+WIFI_RESET_init         0x08001469    0x4  Code  Gb  userBSP.o [1]
+WIFI_Reset_Target       0x080014c9   0x12  Code  Gb  userBSP.o [1]
+WIFI_TSIN_AT            0x08002155   0x4a  Code  Gb  wifi_WIFI_Driver.o [1]
+_LitobSmall             0x080019e9   0xf2  Code  Lc  xprintfsmall.o [3]
+_PrintfSmall            0x080015ed  0x3a4  Code  Gb  xprintfsmall.o [3]
+_PutcharsSmall          0x08001ae1   0x30  Code  Lc  xprintfsmall.o [3]
+_SProut                 0x08001e13    0xa  Code  Gb  xsprout.o [3]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20001fff          --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000          --   Gb  command line/config [2]
+__aeabi_errno_addr      0x08002a79    0xa  Code  Gb  errno.o [3]
+__aeabi_idiv0           0x0800206d         Code  Gb  IntDivZer.o [4]
+__aeabi_memclr4         0x080015ad         Code  Gb  ABImemset.o [4]
+__aeabi_memclr8         0x080015ad         Code  Gb  ABImemset.o [4]
+__aeabi_memcpy          0x080010b1         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4         0x080010d9         Code  Wk  ABImemcpy.o [4]
+__aeabi_uidiv           0x08001d65         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x08001d65         Code  Gb  I32DivModFast.o [4]
+__as_entries_start      0xffffffff          --   Gb  command line/config [2]
+__as_table_start        0xffffffff          --   Gb  command line/config [2]
+__cmain                 0x08002dc5         Code  Gb  cmain.o [4]
+__exit                  0x08002df9   0x14  Code  Gb  exit.o [5]
+__iar_Errno             0x200000b8    0x4  Data  Gb  errno.o [3]
+__iar_Memchr            0x08002053   0x18  Code  Gb  memchr.o [4]
+__iar_Memset4_word      0x0800157d         Code  Gb  ABImemset.o [4]
+__iar_Stoul             0x08002a1f    0xa  Code  Gb  xstoul.o [3]
+__iar_Stoulx            0x080028f9  0x126  Code  Gb  xstoul.o [3]
+__iar_Strchr            0x0800203f   0x14  Code  Gb  strchr.o [4]
+__iar_copy_init3        0x08002d49   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x08002d79   0x28  Code  Gb  data_init.o [4]
+__iar_dlib_perthread_access
+                        0x08002a89    0x2  Code  Gb  xtls.o [3]
+__iar_program_start     0x08002e1d         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x08001ccb   0x2a  Code  Gb  zero_init3.o [4]
+__low_level_init        0x08002ddf    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f030x8.o [1]
+_call_main              0x08002dd1         Code  Gb  cmain.o [4]
+_exit                   0x08002ded         Code  Gb  cexit.o [4]
+_main                   0x08002ddb         Code  Gb  cmain.o [4]
+at_re_in_flg            0x200008c3    0x1  Data  Gb  main.o [1]
+atoi                    0x080028ed    0xc  Code  Gb  atoi.o [3]
+capture                 0x200008ba    0x2  Data  Gb  stm32f0xx_it.o [1]
+cmd_recv                0x200008b8    0x2  Data  Gb  main.o [1]
+cmd_send                0x20000034    0x2  Data  Gb  main.o [1]
+dat_send_SEC_con        0x20000032    0x2  Data  Gb  main.o [1]
+data_allparam_buf       0x20000048   0x18  Data  Gb  main.o [1]
+data_len                0x20000030    0x2  Data  Gb  main.o [1]
+data_resend_flg         0x200008c1    0x1  Data  Gb  main.o [1]
+delay_init              0x080014e1   0x1a  Code  Gb  userBSP.o [1]
+delay_ms                0x08001501    0x8  Code  Gb  userBSP.o [1]
+delay_s                 0x08001565   0x18  Code  Gb  userBSP.o [1]
+dev_cal_flg             0x200008bf    0x1  Data  Gb  main.o [1]
+digits                  0x08002a28   0x28  Data  Lc  xstoul.o [3]
+exit                    0x08002de3    0x8  Code  Gb  exit.o [3]
+fac_ms                  0x200008b0    0x2  Data  Lc  userBSP.o [1]
+fac_us                  0x200008ae    0x1  Data  Lc  userBSP.o [1]
+g_ms_con                0x200008aa    0x2  Data  Gb  userBSP.o [1]
+glob_dat_init           0x08002c09   0x7e  Code  Gb  main.o [1]
+hcho_send               0x20000024    0xc  Data  Gb  main.o [1]
+humi_value              0x20000004    0x1  Data  Gb  main.o [1]
+m_sec_con               0x200008b2    0x2  Data  Gb  main.o [1]
+main                    0x08002ba5   0x64  Code  Gb  main.o [1]
+ndigs                   0x08002a50   0x28  Data  Lc  xstoul.o [3]
+pm25_send               0x20000018    0xc  Data  Gb  main.o [1]
+read_flag               0x200008a8    0x1  Data  Gb  userBSP.o [1]
+recv_byte_con           0x20000001    0x1  Data  Gb  main.o [1]
+recv_en_flg             0x200000c0    0x1  Data  Gb  main.o [1]
+retval                  0x20000000    0x1  Data  Gb  main.o [1]
+sprintf                 0x08001129   0x38  Code  Gb  sprintf.o [3]
+status_recv             0x200000bc    0x2  Data  Gb  main.o [1]
+status_send             0x20000005    0x1  Data  Gb  main.o [1]
+strcat                  0x0800110d   0x1c  Code  Gb  strcat.o [3]
+strcpy                  0x080015b1         Code  Gb  strcpy.o [4]
+strlen                  0x08001161   0x10  Code  Gb  strlen.o [4]
+strncmp                 0x080015c1   0x2c  Code  Gb  strncmp.o [3]
+temp_value              0x20000003    0x1  Data  Gb  main.o [1]
+tim3_it_ms_pro          0x080012a5   0xb0  Code  Gb  userBSP.o [1]
+time_send               0x20000008   0x10  Data  Gb  main.o [1]
+uCmdRspFrame            0x200000c4  0x5d8  Data  Gb  main.o [1]
+upd_soft_flg            0x200008c0    0x1  Data  Gb  main.o [1]
+wifi_NETP_Response      0x20000844   0x44  Data  Gb  main.o [1]
+wifi_WSLK_Response      0x20000800   0x44  Data  Gb  main.o [1]
+wifi_asciiDotAddressTo4Bytes
+                        0x080022d5   0x54  Code  Gb  wifi_config_init.o [1]
+wifi_check_TCPLK        0x080026f9   0x64  Code  Gb  wifi_check_tcplk.o [1]
+wifi_check_serIP        0x080024e1   0x88  Code  Gb  wifi_check_ipset.o [1]
+wifi_check_ssid_link    0x080023d5   0x88  Code  Gb  wifi_check_link.o [1]
+wifi_chk_ipset_cmd      0x080024b1   0x30  Code  Gb  wifi_check_ipset.o [1]
+wifi_chk_link_cmd       0x080023a5   0x30  Code  Gb  wifi_check_link.o [1]
+wifi_cmd_recv_ok_flg    0x200008be    0x1  Data  Gb  main.o [1]
+wifi_dat_send           0x080020bd   0x98  Code  Gb  wifi_WIFI_Driver.o [1]
+wifi_dis_tcplk_cmd      0x080027e1   0x22  Code  Gb  wifi_en_dis_tcp.o [1]
+wifi_en_dis_tcplk       0x08002825   0x6c  Code  Gb  wifi_en_dis_tcp.o [1]
+wifi_en_tcplk_cmd       0x080027bd   0x24  Code  Gb  wifi_en_dis_tcp.o [1]
+wifi_init_struct        0x08002329   0x4c  Code  Gb  wifi_config_init.o [1]
+wifi_json_send_perss    0x080000c1   0x48  Code  Gb  wifi_tcp_send_recv.o [1]
+wifi_rld_off_flg        0x200008c2    0x1  Data  Gb  main.o [1]
+wifi_set_serip          0x0800263d   0x3a  Code  Gb  wifi_set_sipinfo.o [1]
+wifi_set_serip_cmd      0x080025cd   0x6e  Code  Gb  wifi_set_sipinfo.o [1]
+wifi_strApi             0x2000069c  0x114  Data  Gb  wifi_WIFI_Driver.o [1]
+wifi_tcp_recvdat        0x080002cd  0x2b4  Code  Gb  wifi_tcp_send_recv.o [1]
+wifi_tcp_recvdat_cmd    0x08000175   0x4e  Code  Gb  wifi_tcp_send_recv.o [1]
+wifi_tcp_senddat        0x080001cd   0xae  Code  Gb  wifi_tcp_send_recv.o [1]
+wifi_tcp_senddat_cmd    0x08000121   0x4c  Code  Gb  wifi_tcp_send_recv.o [1]
+wifi_tcplk_cmd          0x080026c5   0x34  Code  Gb  wifi_check_tcplk.o [1]
+wifi_tcponoff_flg       0x20000002    0x1  Data  Gb  main.o [1]
+
+
+[1] = E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  11 822 bytes of readonly  code memory
+     242 bytes of readonly  data memory
+   3 265 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

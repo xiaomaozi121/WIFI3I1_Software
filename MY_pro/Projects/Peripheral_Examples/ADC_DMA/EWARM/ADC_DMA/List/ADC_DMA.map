@@ -1,0 +1,471 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.5.7591/W32 for ARM                 12/Nov/2014  17:32:22
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Exe\ADC_DMA.out
+#    Map file     =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\List\ADC_DMA.map
+#    Command line =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\app.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\dht11.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\ds1302.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\eeprom.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\ht1621.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\main.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\startup_stm32f030x8.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0308_discovery.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_adc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_dma.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_flash.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_gpio.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_it.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_misc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_rcc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_tim.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\stm32f0xx_usart.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\system_stm32f0xx.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj\userBSP.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Exe\ADC_DMA.out
+#        --map
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\List\ADC_DMA.map
+#        --config
+#        E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\stm32f0xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xc0
+  .intvec            ro code  0x08000000    0xc0  startup_stm32f030x8.o [1]
+                            - 0x080000c0    0xc0
+
+"P1":                                     0x2358
+  .text              ro code  0x080000c0   0x958  app.o [1]
+  .text              ro code  0x08000a18    0xe0  I32DivModFast.o [4]
+  .text              ro code  0x08000af8   0x4ba  ht1621.o [1]
+  .text              ro code  0x08000fb2    0x2a  zero_init3.o [4]
+  .text              ro code  0x08000fdc   0x4d8  userBSP.o [1]
+  .text              ro code  0x080014b4    0xa2  stm32f0xx_gpio.o [1]
+  .text              ro code  0x08001556     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08001558   0x118  stm32f0xx_flash.o [1]
+  .text              ro code  0x08001670   0x168  eeprom.o [1]
+  .text              ro code  0x080017d8     0x2  IntDivZer.o [4]
+  .text              ro code  0x080017da     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x080017dc   0x260  stm32f0xx_rcc.o [1]
+  .text              ro code  0x08001a3c    0x54  stm32f0xx_misc.o [1]
+  .text              ro code  0x08001a90   0x164  stm32f0xx_tim.o [1]
+  .text              ro code  0x08001bf4    0xf0  stm32f0xx_adc.o [1]
+  .text              ro code  0x08001ce4    0xd0  stm32f0xx_dma.o [1]
+  .text              ro code  0x08001db4   0x1d0  dht11.o [1]
+  .text              ro code  0x08001f84   0x1b0  main.o [1]
+  .text              ro code  0x08002134    0xb4  system_stm32f0xx.o [1]
+  .text              ro code  0x080021e8    0x68  stm32f0xx_it.o [1]
+  .text              ro code  0x08002250    0x30  copy_init3.o [4]
+  .text              ro code  0x08002280    0x28  data_init.o [4]
+  .iar.init_table    const    0x080022a8    0x24  - Linker created -
+  .text              ro code  0x080022cc    0x1a  cmain.o [4]
+  .text              ro code  0x080022e6     0x4  low_level_init.o [3]
+  .text              ro code  0x080022ea     0x8  exit.o [3]
+  .text              ro code  0x080022f2     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x080022f4     0xa  cexit.o [4]
+  .text              ro code  0x080022fe     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002300    0x14  exit.o [5]
+  .text              ro code  0x08002314    0x10  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002324     0xc  cstartup_M.o [4]
+  .text              ro code  0x08002330     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002332     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002334     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002336     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002338     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800233a     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800233c     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800233e     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002340     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002342     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002344     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002346     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002348     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800234a     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800234c     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800234e     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002350     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002352     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002354     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002356     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08002358     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800235a     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800235c     0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800235e     0x2  startup_stm32f030x8.o [1]
+  .rodata            const    0x08002360     0x0  zero_init3.o [4]
+  .rodata            const    0x08002360     0x0  copy_init3.o [4]
+  Initializer bytes  ro data  0x08002360    0xb8  <for P2 s0>
+                            - 0x08002418  0x2358
+
+"P2":                                      0x5a8
+  P2 s0                       0x20000000    0xb8  <Init block>
+    .data            inited   0x20000000    0x4c  main.o [1]
+    .data            inited   0x2000004c    0x3c  ht1621.o [1]
+    .data            inited   0x20000088    0x14  system_stm32f0xx.o [1]
+    .data            inited   0x2000009c    0x10  stm32f0xx_rcc.o [1]
+    .data            inited   0x200000ac     0x8  ht1621.o [1]
+    .data            inited   0x200000b4     0x2  main.o [1]
+    .data            inited   0x200000b6     0x2  main.o [1]
+  .bss               zero     0x200000b8    0x7c  app.o [1]
+  .bss               zero     0x20000134    0x20  main.o [1]
+  .bss               zero     0x20000154     0xc  eeprom.o [1]
+  .bss               zero     0x20000160     0x9  dht11.o [1]
+  .bss               zero     0x2000016a     0x2  main.o [1]
+  .bss               zero     0x2000016c     0x8  main.o [1]
+  .bss               zero     0x20000174     0x8  userBSP.o [1]
+  .bss               zero     0x2000017c     0x4  main.o [1]
+  .bss               zero     0x20000180     0x4  userBSP.o [1]
+  .bss               zero     0x20000184     0x2  main.o [1]
+  .bss               zero     0x20000186     0x2  main.o [1]
+  .bss               zero     0x20000188     0x2  main.o [1]
+  .bss               zero     0x2000018a     0x2  main.o [1]
+  .bss               zero     0x2000018c     0x2  main.o [1]
+  .bss               zero     0x2000018e     0x2  main.o [1]
+  .bss               zero     0x20000190     0x2  main.o [1]
+  .bss               zero     0x20000192     0x2  main.o [1]
+  .bss               zero     0x20000194     0x2  main.o [1]
+  .bss               zero     0x20000196     0x2  main.o [1]
+  .bss               zero     0x20000198     0x2  userBSP.o [1]
+  .bss               zero     0x2000019a     0x1  app.o [1]
+  .bss               zero     0x2000019b     0x1  main.o [1]
+  .bss               zero     0x2000019c     0x1  main.o [1]
+  .bss               zero     0x2000019d     0x1  main.o [1]
+  .bss               zero     0x2000019e     0x1  main.o [1]
+  .bss               zero     0x2000019f     0x1  main.o [1]
+  .bss               zero     0x200001a0     0x1  main.o [1]
+  .bss               zero     0x200001a1     0x1  main.o [1]
+  .bss               zero     0x200001a2     0x1  main.o [1]
+  .bss               zero     0x200001a3     0x1  main.o [1]
+  CSTACK                      0x200001a8   0x400  <Block>
+    CSTACK           uninit   0x200001a8   0x400  <Block tail>
+                            - 0x200005a8   0x5a8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xec:
+          0x200000b8  0xec
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0xb8:
+          0x08002360  0xb8
+    1 destination range, total size 0xb8:
+          0x20000000  0xb8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj: [1]
+    app.o                    2 392               125
+    dht11.o                    464                 9
+    eeprom.o                   360                12
+    ht1621.o                 1 210       68       68
+    main.o                     432       80      155
+    startup_stm32f030x8.o      264
+    stm32f0xx_adc.o            240
+    stm32f0xx_dma.o            208
+    stm32f0xx_flash.o          280
+    stm32f0xx_gpio.o           162
+    stm32f0xx_it.o             104
+    stm32f0xx_misc.o            84
+    stm32f0xx_rcc.o            608       16       16
+    stm32f0xx_tim.o            356
+    system_stm32f0xx.o         180       20       20
+    userBSP.o                1 240                14
+    ------------------------------------------------
+    Total:                   8 584      184      419
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                       8
+    low_level_init.o             4
+    ------------------------------------------------
+    Total:                      12
+
+rt6M_tl.a: [4]
+    I32DivModFast.o            224
+    IntDivZer.o                  2
+    cexit.o                     10
+    cmain.o                     26
+    copy_init3.o                48
+    cstartup_M.o                12
+    data_init.o                 40
+    zero_init3.o                42
+    ------------------------------------------------
+    Total:                     404
+
+shb_l.a: [5]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Gaps                                           1
+    Linker created                       36    1 024
+----------------------------------------------------
+    Grand Total:             9 020      220    1 444
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x080022cd         Code  Gb  cmain.o [4]
+ADC1_GetSConversionValueFromBuffer
+                        0x080011e9   0x28  Code  Gb  userBSP.o [1]
+ADC_CH_DMA_Config       0x08001101   0xd4  Code  Gb  userBSP.o [1]
+ADC_ChannelConfig       0x08001c59    0xa  Code  Gb  stm32f0xx_adc.o [1]
+ADC_Cmd                 0x08001c47   0x12  Code  Gb  stm32f0xx_adc.o [1]
+ADC_DMACmd              0x08001c95   0x16  Code  Gb  stm32f0xx_adc.o [1]
+ADC_DMARequestModeConfig
+                        0x08001cab   0x10  Code  Gb  stm32f0xx_adc.o [1]
+ADC_DeInit              0x08001bf5   0x1e  Code  Gb  stm32f0xx_adc.o [1]
+ADC_GetCalibrationFactor
+                        0x08001c63   0x28  Code  Gb  stm32f0xx_adc.o [1]
+ADC_GetFlagStatus       0x08001cbb   0x1a  Code  Gb  stm32f0xx_adc.o [1]
+ADC_Init                0x08001c13   0x24  Code  Gb  stm32f0xx_adc.o [1]
+ADC_StartOfConversion   0x08001c8b    0xa  Code  Gb  stm32f0xx_adc.o [1]
+ADC_StructInit          0x08001c37   0x10  Code  Gb  stm32f0xx_adc.o [1]
+AD_ScanFlag             0x2000001e    0x1  Data  Gb  main.o [1]
+AHBPrescTable           0x20000088   0x10  Data  Gb  system_stm32f0xx.o [1]
+APBAHBPrescTable        0x2000009c   0x10  Data  Lc  stm32f0xx_rcc.o [1]
+AQI_Process             0x080001e5   0xda  Code  Gb  app.o [1]
+Alarm                   0x08000971   0x7a  Code  Gb  app.o [1]
+AlarmDisable            0x08000d63    0xc  Code  Gb  ht1621.o [1]
+AlarmEnFlag             0x20000024    0x1  Data  Gb  main.o [1]
+AlarmEnable             0x08000d55    0xe  Code  Gb  ht1621.o [1]
+AlarmOnFlag             0x20000025    0x1  Data  Gb  main.o [1]
+BEEP_Init               0x080013cd   0xa4  Code  Gb  userBSP.o [1]
+BackLEDFlag             0x2000019b    0x1  Data  Gb  main.o [1]
+BatChargeFlag           0x2000019c    0x1  Data  Gb  main.o [1]
+Bat_Process             0x080002dd   0xf6  Code  Gb  app.o [1]
+Bat_his_sum             0x20000196    0x2  Data  Gb  main.o [1]
+Bat_test_com            0x20000028    0x1  Data  Gb  main.o [1]
+Beep_Off                0x0800132f    0x4  Code  Gb  userBSP.o [1]
+Beep_On                 0x08001329    0x6  Code  Gb  userBSP.o [1]
+Buffer                  0x200000ac    0x8  Data  Gb  ht1621.o [1]
+CSTACK$$Base            0x200001a8          --   Gb  - Linker created -
+CSTACK$$Limit           0x200005a8          --   Gb  - Linker created -
+DHT11_DATA_Read         0x08001db5   0x28  Code  Lc  dht11.o [1]
+DHT11_ReadTempAndHumi   0x08001ddd  0x194  Code  Gb  dht11.o [1]
+DMA_ClearFlag           0x08001d8b    0x6  Code  Gb  stm32f0xx_dma.o [1]
+DMA_Cmd                 0x08001d75   0x14  Code  Gb  stm32f0xx_dma.o [1]
+DMA_DeInit              0x08001ce5   0x5a  Code  Gb  stm32f0xx_dma.o [1]
+DMA_GetFlagStatus       0x08001d89    0x2  Code  Gb  stm32f0xx_dma.o [1]
+DMA_Init                0x08001d3f   0x36  Code  Gb  stm32f0xx_dma.o [1]
+DataVar                 0x20000154    0x2  Data  Gb  eeprom.o [1]
+Delay_Ms                0x080010d5    0x2  Code  Gb  userBSP.o [1]
+DhtFlag                 0x20000020    0x1  Data  Gb  main.o [1]
+DhtFlagCnt              0x20000026    0x1  Data  Gb  main.o [1]
+DisFlag                 0x20000022    0x1  Data  Gb  main.o [1]
+Display                 0x080008cd   0x94  Code  Gb  app.o [1]
+DisplayBuffer           0x08000cc7   0x36  Code  Lc  ht1621.o [1]
+E2P_Read                0x080008a3   0x2a  Code  Gb  app.o [1]
+E2P_Write               0x08000879   0x2a  Code  Gb  app.o [1]
+EE_FindValidPage        0x080016c1   0x3a  Code  Lc  eeprom.o [1]
+EE_PageTransfer         0x08001741   0x82  Code  Lc  eeprom.o [1]
+EE_ReadVariable         0x08001671   0x38  Code  Gb  eeprom.o [1]
+EE_VerifyPageFullWriteVariable
+                        0x080016fb   0x46  Code  Lc  eeprom.o [1]
+EE_WriteVariable        0x080016a9   0x18  Code  Gb  eeprom.o [1]
+FLASH_ErasePage         0x080015a7   0x36  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_GetPrefetchBufferStatus
+                        0x0800157f    0xa  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_GetStatus         0x08001625   0x28  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_Lock              0x0800159b    0xc  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_PrefetchBufferCmd
+                        0x08001567   0x18  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_ProgramHalfWord   0x080015dd   0x30  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_SetLatency        0x08001559    0xe  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_Unlock            0x08001589   0x12  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_WaitForLastOperation
+                        0x08001651   0x20  Code  Gb  stm32f0xx_flash.o [1]
+GPIO_Init               0x080014b5   0x6a  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_PinAFConfig        0x08001537   0x20  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_ReadInputDataBit   0x0800151f    0x8  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_ResetBits          0x08001533    0x4  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_SetBits            0x0800152f    0x4  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_User_Init          0x08001215  0x10a  Code  Gb  userBSP.o [1]
+GetAD_Value02           0x080013b5   0x18  Code  Gb  userBSP.o [1]
+HCHO_Process            0x08000171   0x74  Code  Gb  app.o [1]
+HCHO_Temp               0x20000134   0x20  Data  Gb  main.o [1]
+HCHO_average            0x2000018c    0x2  Data  Gb  main.o [1]
+HardFault_Handler       0x080021eb    0x2  Code  Gb  stm32f0xx_it.o [1]
+Init_Timer3             0x08001321    0x8  Code  Gb  userBSP.o [1]
+Key                     0x20000027    0x1  Data  Gb  main.o [1]
+KeyClearFlag            0x2000001f    0x1  Data  Gb  main.o [1]
+KeyCnt                  0x200001a1    0x1  Data  Gb  main.o [1]
+KeyFlag                 0x200001a2    0x1  Data  Gb  main.o [1]
+KeyIdentify             0x08000431   0x66  Code  Gb  app.o [1]
+KeyOk                   0x200001a3    0x1  Data  Gb  main.o [1]
+KeyProcess              0x080005f9  0x26c  Code  Gb  app.o [1]
+KeyProcessSet           0x080004b5  0x110  Code  Gb  app.o [1]
+KeyScan                 0x080003dd   0x44  Code  Gb  app.o [1]
+KeyScanFlag             0x2000001d    0x1  Data  Gb  main.o [1]
+LCD_Cmd                 0x08000be1   0x3c  Code  Gb  ht1621.o [1]
+LCD_DisplayBatLogo      0x08000d79   0x52  Code  Gb  ht1621.o [1]
+LCD_DisplayClear        0x08000c57   0x14  Code  Gb  ht1621.o [1]
+LCD_DisplayName         0x08000f0d   0xa6  Code  Gb  ht1621.o [1]
+LCD_DisplayNum          0x08000dd1  0x134  Code  Gb  ht1621.o [1]
+LCD_DisplayTest         0x08000c43   0x14  Code  Gb  ht1621.o [1]
+LCD_Init                0x08000c1d   0x26  Code  Gb  ht1621.o [1]
+LCD_Write               0x08000b8d   0x54  Code  Lc  ht1621.o [1]
+LED_H                   0x2000004c    0xc  Data  Gb  ht1621.o [1]
+LED_H2                  0x20000064    0xc  Data  Gb  ht1621.o [1]
+LED_H3                  0x2000007c    0xc  Data  Gb  ht1621.o [1]
+LED_L                   0x20000058    0xc  Data  Gb  ht1621.o [1]
+LED_L2                  0x20000070    0xc  Data  Gb  ht1621.o [1]
+Lcd_DisplayBackground   0x08000c6b   0x5c  Code  Gb  ht1621.o [1]
+Lcd_DisplayRank         0x08000d15   0x40  Code  Gb  ht1621.o [1]
+Lcd_DisplayRankAll      0x08000cfd   0x18  Code  Gb  ht1621.o [1]
+MaxHoldFlag             0x20000023    0x1  Data  Gb  main.o [1]
+Max_AQI                 0x20000194    0x2  Data  Gb  main.o [1]
+Max_HCHO                0x20000192    0x2  Data  Gb  main.o [1]
+Max_PM                  0x20000190    0x2  Data  Gb  main.o [1]
+NMI_Handler             0x080021e9    0x2  Code  Gb  stm32f0xx_it.o [1]
+NVIC_Init               0x08001a3d   0x46  Code  Gb  stm32f0xx_misc.o [1]
+OldKey                  0x200001a0    0x1  Data  Gb  main.o [1]
+PM_En_Flag              0x2000019d    0x1  Data  Gb  main.o [1]
+PM_Process              0x080000c1   0xb0  Code  Gb  app.o [1]
+PM_ProcessFlag          0x2000001c    0x1  Data  Gb  main.o [1]
+PM_V                    0x2000018a    0x2  Data  Gb  main.o [1]
+PM_average              0x20000188    0x2  Data  Gb  main.o [1]
+ParameterSetFlag        0x20000021    0x1  Data  Gb  main.o [1]
+PendSV_Handler          0x080021ef    0x2  Code  Gb  stm32f0xx_it.o [1]
+Pranus_CLK_Config       0x08000fdd   0x7c  Code  Gb  userBSP.o [1]
+PrescalerValue          0x20000198    0x2  Data  Gb  userBSP.o [1]
+RCC_AHBPeriphClockCmd   0x0800198d   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x080019b5   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x080019a1   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphResetCmd  0x080019c9   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_DeInit              0x080017dd   0x48  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetClocksFreq       0x080018c1   0xc2  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetFlagStatus       0x080019e5   0x2a  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetSYSCLKSource     0x08001889    0xa  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_HCLKConfig          0x08001893    0xa  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_HSEConfig           0x08001825    0xa  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_HSICmd              0x0800182f    0xc  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_PCLKConfig          0x0800189d    0xe  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_PLLCmd              0x08001867   0x18  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_PLLConfig           0x08001851   0x16  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_SYSCLKConfig        0x0800187f    0xa  Code  Gb  stm32f0xx_rcc.o [1]
+Region$$Table$$Base     0x080022a8          --   Gb  - Linker created -
+Region$$Table$$Limit    0x080022cc          --   Gb  - Linker created -
+RegularConvData_Tab     0x20000174    0x8  Data  Gb  userBSP.o [1]
+SVC_Handler             0x080021ed    0x2  Code  Gb  stm32f0xx_it.o [1]
+SetCnt                  0x2000019f    0x1  Data  Gb  main.o [1]
+SysTick_Handler         0x080021f1    0x2  Code  Gb  stm32f0xx_it.o [1]
+SystemCoreClock         0x20000098    0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit              0x08002135   0x98  Code  Gb  system_stm32f0xx.o [1]
+TIM3_IRQHandler         0x080021f3   0x58  Code  Gb  stm32f0xx_it.o [1]
+TIM_ClearFlag           0x08001bd3    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_ClearITPendingBit   0x08001bef    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_Cmd                 0x08001aef   0x14  Code  Gb  stm32f0xx_tim.o [1]
+TIM_Config              0x08001059   0x62  Code  Gb  userBSP.o [1]
+TIM_CtrlPWMOutputs      0x08001b03   0x22  Code  Gb  stm32f0xx_tim.o [1]
+TIM_GetITStatus         0x08001bd9   0x16  Code  Gb  stm32f0xx_tim.o [1]
+TIM_ITConfig            0x08001bc1   0x12  Code  Gb  stm32f0xx_tim.o [1]
+TIM_OC1Init             0x08001b25   0x64  Code  Gb  stm32f0xx_tim.o [1]
+TIM_PrescalerConfig     0x08001ae9    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_TimeBaseInit        0x08001a91   0x58  Code  Gb  stm32f0xx_tim.o [1]
+Timer3Cnt_Process_IRQ   0x08001347   0x56  Code  Gb  userBSP.o [1]
+VirtAddVarTab           0x20000158    0x8  Data  Gb  eeprom.o [1]
+WatchDogFeed            0x08001345    0x2  Code  Gb  userBSP.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20001fff          --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000          --   Gb  command line/config [2]
+__aeabi_idiv            0x08000a45         Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0           0x080017d9         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod         0x08000a45         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidiv           0x08000a4b         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x08000a4b         Code  Gb  I32DivModFast.o [4]
+__as_entries_start      0xffffffff          --   Gb  command line/config [2]
+__as_table_start        0xffffffff          --   Gb  command line/config [2]
+__cmain                 0x080022cd         Code  Gb  cmain.o [4]
+__exit                  0x08002301   0x14  Code  Gb  exit.o [5]
+__iar_copy_init3        0x08002251   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x08002281   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x08002325         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x08000fb3   0x2a  Code  Gb  zero_init3.o [4]
+__low_level_init        0x080022e7    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f030x8.o [1]
+_call_main              0x080022d9         Code  Gb  cmain.o [4]
+_exit                   0x080022f5         Code  Gb  cexit.o [4]
+_main                   0x080022e3         Code  Gb  cmain.o [4]
+cnt_s                   0x2000019e    0x1  Data  Gb  main.o [1]
+delay_init              0x080010bb   0x1a  Code  Gb  userBSP.o [1]
+delay_us                0x080010f9    0x8  Code  Gb  userBSP.o [1]
+det_h_cval              0x2000018e    0x2  Data  Gb  main.o [1]
+exit                    0x080022eb    0x8  Code  Gb  exit.o [3]
+fac_ms                  0x20000182    0x2  Data  Lc  userBSP.o [1]
+fac_us                  0x20000180    0x1  Data  Lc  userBSP.o [1]
+main                    0x08001f85  0x1b0  Code  Gb  main.o [1]
+max_adc3                0x200000b6    0x2  Data  Gb  main.o [1]
+min_adc3                0x200000b4    0x2  Data  Gb  main.o [1]
+moni_spi_Init           0x08000af9   0x48  Code  Gb  ht1621.o [1]
+moni_spi_Write_High     0x08000b41   0x1c  Code  Lc  ht1621.o [1]
+moni_spi_Write_Low      0x08000b5d   0x1a  Code  Lc  ht1621.o [1]
+parameters              0x2000002c   0x18  Data  Gb  main.o [1]
+status                  0x20000168    0x1  Data  Lc  dht11.o [1]
+sum_adc3                0x2000017c    0x4  Data  Gb  main.o [1]
+sum_adc3_num            0x20000186    0x2  Data  Gb  main.o [1]
+timer5_cnt              0x20000184    0x2  Data  Gb  main.o [1]
+timer_cnt               0x2000016a    0x2  Data  Gb  main.o [1]
+ts_pranus_MP_pro        0x20000048    0x4  Data  Gb  main.o [1]
+ts_pranus_dat_pro       0x20000044    0x4  Data  Gb  main.o [1]
+ts_pranus_pro           0x20000000   0x1c  Data  Gb  main.o [1]
+u16_adc1                0x2000016c    0x8  Data  Gb  main.o [1]
+value_array             0x20000160    0x8  Data  Lc  dht11.o [1]
+
+
+[1] = E:\BHKS\stm32f0\MY_DEMO\MY_pro\Projects\Peripheral_Examples\ADC_DMA\EWARM\ADC_DMA\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  9 020 bytes of readonly  code memory
+    220 bytes of readonly  data memory
+  1 444 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

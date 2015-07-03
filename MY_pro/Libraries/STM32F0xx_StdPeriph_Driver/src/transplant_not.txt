@@ -1,0 +1,16 @@
+移植过程中出现的问题
+1驱动要求
+  1定时器驱动 10ms溢出中断
+  2adc驱动 dma方式
+  3蜂鸣器驱动  改为tim驱动
+  4flash驱动
+  5io驱动
+  
+2问题
+  1对于io驱动，所有的函数名，包括初始化，设置管脚，获取标志寄存器等都要换掉，切函数的参数和返回形式不同，需要注意
+  2对于adc驱动，使用dma方式直接吧数据放到4个u16的buf里
+  3蜂鸣器用去一路tim的pwm
+  4flash需要注意，stm32的flash操作的最小单元是16bit的，原来程序是8bit的，这个地方需要特殊处理
+  5注意，在stm32的系统函数没有这个函数disableInterrupts();
+  6外设初始化时 注意 RCC_AHBPeriphClockCmd    RCC_AHBPeriphResetCmd
+  7板子上开关按键那里r1和r9的标号放反了

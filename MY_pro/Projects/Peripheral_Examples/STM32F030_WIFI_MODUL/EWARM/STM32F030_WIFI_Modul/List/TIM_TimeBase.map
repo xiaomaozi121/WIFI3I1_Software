@@ -1,0 +1,298 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.5.7591/W32 for ARM                 04/Nov/2014  17:31:39
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Exe\TIM_TimeBase.out
+#    Map file     =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\List\TIM_TimeBase.map
+#    Command line =  
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\main.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\man_tim_pro.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\startup_stm32f030x8.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0308_discovery.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_gpio.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_it.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_iwdg.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_misc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_rcc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_rtc.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_spi.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_tim.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f0xx_usart.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\system_stm32f0xx.o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\USART.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Exe\TIM_TimeBase.out
+#        --map
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\List\TIM_TimeBase.map
+#        --config
+#        E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\stm32f0xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A1":                                      0xc0
+  .intvec            ro code  0x08000000   0xc0  startup_stm32f030x8.o [1]
+                            - 0x080000c0   0xc0
+
+"P1":                                     0x914
+  .text              ro code  0x080000c0  0x120  stm32f0xx_rcc.o [1]
+  .text              ro code  0x080001e0   0xae  I32DivModFast.o [5]
+  .text              ro code  0x0800028e   0x2a  zero_init3.o [5]
+  .text              ro code  0x080002b8    0x2  IntDivZer.o [5]
+  .text              ro code  0x080002ba    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x080002bc  0x110  stm32f0xx_usart.o [1]
+  .text              ro code  0x080003cc   0xce  stm32f0xx_tim.o [1]
+  .text              ro code  0x0800049a    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800049c   0xb4  system_stm32f0xx.o [1]
+  .text              ro code  0x08000550   0xb4  USART.o [1]
+  .text              ro code  0x08000604   0x54  stm32f0xx_misc.o [1]
+  .text              ro code  0x08000658   0x8a  stm32f0xx_gpio.o [1]
+  .text              ro code  0x080006e2    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x080006e4   0xac  stm32f0xx_it.o [1]
+  .text              ro code  0x08000790   0x98  man_tim_pro.o [1]
+  .text              ro code  0x08000828   0x5c  stm32f0308_discovery.o [1]
+  .text              ro code  0x08000884   0x30  copy_init3.o [5]
+  .text              ro code  0x080008b4   0x28  data_init.o [5]
+  .iar.init_table    const    0x080008dc   0x24  - Linker created -
+  .text              ro code  0x08000900   0x1a  cmain.o [5]
+  .text              ro code  0x0800091a    0x4  low_level_init.o [3]
+  .text              ro code  0x0800091e   0x12  main.o [1]
+  .text              ro code  0x08000930    0x8  exit.o [3]
+  .text              ro code  0x08000938    0xa  cexit.o [5]
+  .text              ro code  0x08000942    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000944   0x14  exit.o [6]
+  .text              ro code  0x08000958   0x10  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000968    0xc  cstartup_M.o [5]
+  .text              ro code  0x08000974    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000976    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000978    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800097a    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800097c    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800097e    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000980    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000982    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000984    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000986    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000988    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800098a    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800098c    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800098e    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000990    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000992    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000994    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000996    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08000998    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800099a    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800099c    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x0800099e    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x080009a0    0x2  startup_stm32f030x8.o [1]
+  .rodata            const    0x080009a2    0x0  zero_init3.o [5]
+  .rodata            const    0x080009a2    0x0  copy_init3.o [5]
+  Initializer bytes  ro data  0x080009a4   0x30  <for P2 s0>
+                            - 0x080009d4  0x914
+
+"P2":                                     0x438
+  P2 s0                       0x20000000   0x30  <Init block>
+    .data            inited   0x20000000   0x14  system_stm32f0xx.o [1]
+    .data            inited   0x20000014   0x10  stm32f0xx_rcc.o [1]
+    .data            inited   0x20000024    0x8  stm32f0308_discovery.o [1]
+    .data            inited   0x2000002c    0x2  man_tim_pro.o [1]
+  .bss               zero     0x20000030    0x4  man_tim_pro.o [1]
+  .bss               zero     0x20000034    0x2  man_tim_pro.o [1]
+  .bss               zero     0x20000036    0x2  stm32f0xx_it.o [1]
+  CSTACK                      0x20000038  0x400  <Block>
+    CSTACK           uninit   0x20000038  0x400  <Block tail>
+                            - 0x20000438  0x438
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x8:
+          0x20000030   0x8
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x30 (104% of destination):
+          0x080009a4  0x30
+    1 destination range, total size 0x2e:
+          0x20000000  0x2e
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj: [1]
+    USART.o                     180
+    main.o                       18
+    man_tim_pro.o               152        2        8
+    startup_stm32f030x8.o       262
+    stm32f0308_discovery.o       92        8        8
+    stm32f0xx_gpio.o            138
+    stm32f0xx_it.o              172                 2
+    stm32f0xx_misc.o             84
+    stm32f0xx_rcc.o             288       16       16
+    stm32f0xx_tim.o             206
+    stm32f0xx_usart.o           272
+    system_stm32f0xx.o          180       20       20
+    -------------------------------------------------
+    Total:                    2 044       46       54
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                        8
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       12
+
+m6M_tl.a: [4]
+    -------------------------------------------------
+    Total:
+
+rt6M_tl.a: [5]
+    I32DivModFast.o             174
+    IntDivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    copy_init3.o                 48
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 42
+    -------------------------------------------------
+    Total:                      354
+
+shb_l.a: [6]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Linker created                        40    1 024
+-----------------------------------------------------
+    Grand Total:              2 430       86    1 078
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address  Size  Type      Object
+-----                      -------  ----  ----      ------
+?main                   0x08000901        Code  Gb  cmain.o [5]
+AHBPrescTable           0x20000000  0x10  Data  Gb  system_stm32f0xx.o [1]
+APBAHBPrescTable        0x20000014  0x10  Data  Lc  stm32f0xx_rcc.o [1]
+BHKS_SerialPutChar      0x080005e5  0x16  Code  Gb  USART.o [1]
+CCR1_Val                0x20000030   0x2  Data  Gb  man_tim_pro.o [1]
+CCR3_Val                0x2000002c   0x2  Data  Gb  man_tim_pro.o [1]
+CSTACK$$Base            0x20000038         --   Gb  - Linker created -
+CSTACK$$Limit           0x20000438         --   Gb  - Linker created -
+GPIO_CLK                0x0800087c   0x8  Data  Gb  stm32f0308_discovery.o [1]
+GPIO_Init               0x08000659  0x6a  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_PIN                0x08000878   0x4  Data  Gb  stm32f0308_discovery.o [1]
+GPIO_PORT               0x20000024   0x8  Data  Gb  stm32f0308_discovery.o [1]
+GPIO_PinAFConfig        0x080006c3  0x20  Code  Gb  stm32f0xx_gpio.o [1]
+HardFault_Handler       0x080006e7   0x2  Code  Gb  stm32f0xx_it.o [1]
+NMI_Handler             0x080006e5   0x2  Code  Gb  stm32f0xx_it.o [1]
+NVIC_Init               0x08000605  0x46  Code  Gb  stm32f0xx_misc.o [1]
+PendSV_Handler          0x080006eb   0x2  Code  Gb  stm32f0xx_it.o [1]
+PrescalerValue          0x20000032   0x2  Data  Gb  man_tim_pro.o [1]
+RCC_AHBPeriphClockCmd   0x08000183  0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x080001ab  0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08000197  0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetClocksFreq       0x080000c1  0xc2  Code  Gb  stm32f0xx_rcc.o [1]
+Region$$Table$$Base     0x080008dc         --   Gb  - Linker created -
+Region$$Table$$Limit    0x08000900         --   Gb  - Linker created -
+STM_EVAL_LEDInit        0x08000829  0x36  Code  Gb  stm32f0308_discovery.o [1]
+STM_EVAL_LEDToggle      0x08000861  0x14  Code  Gb  stm32f0308_discovery.o [1]
+SVC_Handler             0x080006e9   0x2  Code  Gb  stm32f0xx_it.o [1]
+SysTick_Handler         0x080006ed   0x2  Code  Gb  stm32f0xx_it.o [1]
+SystemCoreClock         0x20000010   0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit              0x0800049d  0x98  Code  Gb  system_stm32f0xx.o [1]
+TIM3_IRQHandler         0x080006ef  0x7c  Code  Gb  stm32f0xx_it.o [1]
+TIM_ClearITPendingBit   0x08000495   0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_Cmd                 0x0800042b  0x14  Code  Gb  stm32f0xx_tim.o [1]
+TIM_Config              0x08000791  0x64  Code  Gb  man_tim_pro.o [1]
+TIM_GetCapture4         0x08000469   0x4  Code  Gb  stm32f0xx_tim.o [1]
+TIM_GetITStatus         0x0800047f  0x16  Code  Gb  stm32f0xx_tim.o [1]
+TIM_ITConfig            0x0800046d  0x12  Code  Gb  stm32f0xx_tim.o [1]
+TIM_PrescalerConfig     0x08000425   0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SetCompare4         0x08000461   0x4  Code  Gb  stm32f0xx_tim.o [1]
+TIM_TimeBaseInit        0x080003cd  0x58  Code  Gb  stm32f0xx_tim.o [1]
+USART1_IRQHandler       0x0800076b  0x14  Code  Gb  stm32f0xx_it.o [1]
+USART_Cmd               0x08000359  0x16  Code  Gb  stm32f0xx_usart.o [1]
+USART_GetFlagStatus     0x080003bf   0xe  Code  Gb  stm32f0xx_usart.o [1]
+USART_INIT              0x08000551  0x94  Code  Gb  USART.o [1]
+USART_ITConfig          0x08000395  0x2a  Code  Gb  stm32f0xx_usart.o [1]
+USART_Init              0x080002bd  0x9c  Code  Gb  stm32f0xx_usart.o [1]
+USART_ReceiveData       0x08000377   0x8  Code  Gb  stm32f0xx_usart.o [1]
+USART_SendData          0x0800036f   0x8  Code  Gb  stm32f0xx_usart.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20001fff         --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000         --   Gb  command line/config [2]
+__aeabi_idiv0           0x080002b9        Code  Gb  IntDivZer.o [5]
+__aeabi_uidiv           0x080001e1        Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x080001e1        Code  Gb  I32DivModFast.o [5]
+__as_entries_start      0xffffffff         --   Gb  command line/config [2]
+__as_table_start        0xffffffff         --   Gb  command line/config [2]
+__cmain                 0x08000901        Code  Gb  cmain.o [5]
+__exit                  0x08000945  0x14  Code  Gb  exit.o [6]
+__iar_copy_init3        0x08000885  0x30  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x080008b5  0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x08000969        Code  Gb  cstartup_M.o [5]
+__iar_zero_init3        0x0800028f  0x2a  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800091b   0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000        Data  Gb  startup_stm32f030x8.o [1]
+_call_main              0x0800090d        Code  Gb  cmain.o [5]
+_exit                   0x08000939        Code  Gb  cexit.o [5]
+_main                   0x08000917        Code  Gb  cmain.o [5]
+capture                 0x20000036   0x2  Data  Gb  stm32f0xx_it.o [1]
+exit                    0x08000931   0x8  Code  Gb  exit.o [3]
+g_ms_con                0x20000034   0x2  Data  Gb  man_tim_pro.o [1]
+main                    0x0800091f  0x12  Code  Gb  main.o [1]
+tim3_it_ms_pro          0x080007f5  0x20  Code  Gb  man_tim_pro.o [1]
+
+
+[1] = E:\BHKS\stm32f0\MY_DEMO\MY_test\Projects\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  2 430 bytes of readonly  code memory
+     86 bytes of readonly  data memory
+  1 078 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
